@@ -1,11 +1,11 @@
 package by.arch.activity.service;
 
 import by.arch.activity.model.Project;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-
-import java.util.List;
 public interface ProjectService {
     Project create(Project project);
-    List<Project> findAll();
+    Page<Project> findAll(Pageable pageable);
     void delete(Long id);
 }
