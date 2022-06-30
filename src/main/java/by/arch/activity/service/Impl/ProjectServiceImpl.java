@@ -1,5 +1,7 @@
 package by.arch.activity.service.Impl;
 
+import by.arch.activity.dto.ProjectDto;
+import by.arch.activity.mapper.ProjectMapper;
 import by.arch.activity.model.Project;
 import by.arch.activity.repository.ProjectRepository;
 import by.arch.activity.service.ProjectService;
@@ -14,6 +16,7 @@ import org.springframework.stereotype.Service;
 public class ProjectServiceImpl implements ProjectService {
 
     private final ProjectRepository projectRepository;
+    private final ProjectMapper projectMapper;
 
     @Override
     public Project create(Project project) {
@@ -21,8 +24,9 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Page<Project> findAll(Pageable pageable) {
-        return projectRepository.findAll(pageable);
+    public Iterable<ProjectDto> findAll(Pageable pageable) {
+        Page<Project> pageProjects = projectRepository.findAll(pageable);
+        return projectMapper.toListDto(pageProjects);
     }
 
     @Override

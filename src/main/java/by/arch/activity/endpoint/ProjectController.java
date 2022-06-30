@@ -1,9 +1,8 @@
 package by.arch.activity.endpoint;
 
-import by.arch.activity.model.Project;
+import by.arch.activity.dto.ProjectDto;
 import by.arch.activity.service.ProjectService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
@@ -17,12 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class ProjectController {
 
+    private static final int PAGE_DEFAULT_SIZE = 5;
     private final ProjectService projectService;
 
     @GetMapping
-    public ResponseEntity<Page<Project>> getAllProjects(
-            @PageableDefault(size = 5) Pageable pageable
-    ){
+    public ResponseEntity<Iterable<ProjectDto>> getAllProjects(
+            @PageableDefault(size = PAGE_DEFAULT_SIZE) Pageable pageable
+    ) {
         return ResponseEntity.ok(projectService.findAll(pageable));
     }
 
