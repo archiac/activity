@@ -1,0 +1,18 @@
+2022-06-21 12:46:15,345 INFO org.springframework.boot.StartupInfoLogger [main] Starting ActivityApplication using Java 11.0.2 on DESKTOP-PQQEM5B with PID 10544 (E:\work\activity\activity\target\classes started by march in E:\work\activity\activity)
+2022-06-21 12:46:15,347 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-06-21 12:46:16,163 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-06-21 12:46:16,168 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:46:16,168 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-06-21 12:46:16,169 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-21 12:46:16,269 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-06-21 12:46:16,269 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 898 ms
+2022-06-21 12:46:16,560 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-21 12:46:16,806 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-21 12:46:17,198 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 12:46:17,414 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-21 12:46:17,901 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:46:17,914 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 12:46:17,922 INFO org.springframework.boot.StartupInfoLogger [main] Started ActivityApplication in 2.862 seconds (JVM running for 3.469)
+2022-06-21 12:46:39,044 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-21 12:46:39,046 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-06-21 12:46:39,054 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
